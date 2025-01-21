@@ -1,0 +1,137 @@
+*{
+    font-family: "Quicksand", serif;
+}
+body{
+    margin: 0px 141px;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+/* Universal Style Start */
+.color-orange{
+    color: orange;
+}
+.color-skyblue{
+    color: #01ACFD;
+}
+.color-lightblue{
+    color: #05D4DF;
+}
+.color-grey{
+    color: #495560;
+}
+.color-purple{
+    color:#5D58EF
+}
+.color-light-navyblue{
+    color: #68A2DF;
+}
+/* Universal Style End */
+
+/* Main Nav Start */
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+}
+.logo h1{
+    font-size: 32px;
+}
+.menu-list ul{
+    display: flex;
+    gap: 32px;
+}
+.menu-list ul li{
+    list-style-type: none;
+}
+.menu-list ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-nav button{
+    background-color: orange;
+    padding: 10px 60.5px;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu-icon{
+    display: none;
+}
+.underline-nav{
+    display: none;
+}
+/* Main Nav Ends */
+
+/* Banner Start */
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.banner h1{
+    font-size: 3.5rem;
+}
+.banner p{
+    font-size: 1.5rem;
+}
+.banner button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 3rem;
+    border-radius: 0.9rem;
+}
+/* Banner ENd */
+
+
+/* For Mobile Device */
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0px 16px;
+    }
+    /* Main Nav Start */
+    .main-nav{
+        margin: 12px 0px;
+    }
+    .logo h1, .menu-list, .main-nav button{
+        display: none;
+    }
+    .logo img{
+        width: 46px;
+        height: 46px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .underline-nav{
+        display: block;
+        margin: 0px -16px;
+        border-bottom: 1px solid orange;   
+        border-top: none;    
+    }
+    /* Main Nav End */
+
+    /* Banner Start */
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    /* Banner End */
+
+
+
+}
